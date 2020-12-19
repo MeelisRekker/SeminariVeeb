@@ -16,6 +16,16 @@ h1 {
 	color: #003;
 	background:#FFF;
 }
+h2 {
+	text-size: 60px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: bolder;
+	text-align: center;
+	color: #003;
+	background:#FFF;
+}
 p {
 	font-family: "Comic Sans MS", cursive;
 	font-size: 24px;
@@ -30,13 +40,20 @@ img {
 	border-style: double;
 	border-color:#003;
 }
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
 table, tr, td {
 	border: 2px solid black;
 	background-color: #CF6;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 th {
-	background-color: #F30;
+	background-color:#0F0;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	padding-left: 20px;
@@ -47,54 +64,91 @@ body {
 	background-image: url(img/seamlessFractal640.jpg);
 	background-repeat: repeat;
 }
+li {
+	background-color: #066;	
+}
+ol {
+	background-color: #903;
+	text-align: center;		
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 
 <meta charset="utf-8">
 </head>
 
 <body>
-
 <h1>Fraktalid</h1>
+<div class="row">
+  <div class="column">
+  	<p>See veebileht kujutab endast väikest ülevaadet fraktalitest. Fraktaleid saadakse kui programmijupis koodis olev meetod pöördub iseenda poole, et protsessi uuesti esile kutsuda. Seda tehakse 					nii mitu korda kui ette määratud programmeerija poolt.</p>
+	<p></p>
+	<a href="https://en.wikipedia.org/wiki/Fractal">Wikipedia link</a>
+	<a href=>
+	<img alt="W3Schools" src="https://people.sc.fsu.edu/~jburkardt/data/pbma/sierpinski.png" width="600" height="450">
+	</a>  
+  </div>
+  <div class="column">
+  	<h2>Järgnev on loetelu näidetest</h2>
+	<ul>
+  		<li>Artiklid
+  			<ol>
+  			<li><a href="https://theconversation.com/explainer-what-are-fractals-10865">Explainer: what are fractals?</a></li>
+  			<li><a href="https://www.diygenius.com/fractals-in-nature/">Fractals in nature</a></li>
+  			<li><a href="https://www.forgingmind.com/pages/fractal-guide">Fractal Guide</a></li>
+			</ol>
+  		</li>
+  		<li><a href="https://www.behance.net/gallery/31055505/FoM-Fractal-GIF-Frenzy">Liikuvad Fraktalid</a></li>
+  		<li><img src="img/Fractal_tree.gif" width="100" height="100"/></li>
+	</ul>
+	<table width="200" border="1">
+  		<th>Variant1</th>
+  		<th>Variant2</th>
+        <th>Variant3</th>
+  		<tr>
+    	<td><a target="_blank" href="img/pilt1.jpg">
+ 			<img src="img/pilt1.jpg" alt="" style="width:150px">
+            </td>    
+    	<td><a target="_blank" href="img/pilt2.jpg">
+ 			<img src="img/pilt2.jpg" alt="" style="width:150px">
+            </td>
+         <td><a target="_blank" href="img/pilt5.jpg">
+ 			<img src="img/pilt5.jpg" alt="" style="width:150px">
+            </td>
+  		</tr>
+  		<tr>
+    	<td><a target="_blank" href="img/pilt3.jpg">
+ 			<img src="img/pilt3.png" alt="" style="width:150px">
+        </td>
+    	<td><a target="_blank" href="img/pilt4.jpg">
+ 			<img src="img/pilt4.jpg" alt="" style="width:150px">
+            </td>
+         <td><a target="_blank" href="img/pilt6.jpg">
+ 			<img src="img/pilt6.jpg" alt="" style="width:150px"></td>
+  		</tr>
+	</table>
+	<a href="FraktaliteJ2tk.html">Lisainfo</a>
+  </div>
+</div>
 
-<p>See veebileht kujutab endast väikest ülevaadet fraktalitest. Fraktaleid saadakse kui programmijupis koodis olev meetod pöördub iseenda poole, et protsessi uuesti esile kutsuda. Seda tehakse nii mitu korda kui ette määratud programmeerija poolt.</p>
-<p></p>
-<a href="https://en.wikipedia.org/wiki/Fractal">Wikipedia link</a>
-<a href="https://en.wikipedia.org/wiki/Fractal">
-<img alt="W3Schools" src="https://people.sc.fsu.edu/~jburkardt/data/pbma/sierpinski.png" width="600" height="350">
-</a>
 
-<h2>Järgnev on loetelu näidetest</h2>
 
-<ul>
-  <li>Näide1
-  	<ol>
-  		<li>Variant1</li>
-  		<li>Variant2</li>
-  		<li>Variant3</li>
-	</ol>
-  </li>
-  <li>Näide2</li>
-  <li>Näide3</li>
-</ul>
 
-<table width="200" border="1">
-  <th>Variant1</th>
-  <th>Variant2</th>
-  <tr>
-    <td>asd</td>    
-    <td>asd1</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
 
-<a href="FraktaliteJ2tk.html">Lisainfo</a>
+
+
+
 </body>
 
 </html>
