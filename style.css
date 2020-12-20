@@ -1,0 +1,78 @@
+h1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	color: #003;
+	background:#FFF;
+}
+h2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: bolder;
+	text-align: center;
+	color: #003;
+	background:#FFF;
+}
+p {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bolder;
+	text-align: left;
+	color: #030;
+	background: #CFC;
+}
+img {
+	box-shadow: 5px 10px #333333;
+	border-style: double;
+	border-color:#003;
+	transition: width 2s, height 4s;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  width: 200px;
+  height: 200px;
+}
+
+table, tr, td {
+	border: 2px solid black;
+	background-color: #CF6;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+th {
+	background-color:#0F0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+body {
+	background-image: url(img/seamlessFractal640.jpg);
+	background-repeat: repeat;
+}
+li {
+	background-color: #066;	
+}
+ol {
+	background-color: #903;
+	text-align: center;		
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
